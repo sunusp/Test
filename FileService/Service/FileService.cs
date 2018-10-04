@@ -18,7 +18,7 @@ namespace FileDataService.Service
         {
             string fileMetaData = null;
 
-            if (!string.IsNullOrEmpty(requiredFunctionality))
+            if (!string.IsNullOrEmpty(requiredFunctionality) && !string.IsNullOrEmpty(filePath))
             {
                 // Get global functionality list 
                 string[] fileSizes = GetFileSizeInput();
